@@ -36,16 +36,20 @@
 }
 
 .footStyle{
-    background-color:crimson;
-    color:#800000; 
+    background-color:#800000;
+    color:darkslategrey; 
 }
 
 .glyphicon-small {
     color: #800000;
-    font-size: 50px;
+    font-size: 40px !important;
 }
 
 .glyphicon {
     color: #800000;
     font-size: 200px;
+}
+
+.table td {
+   text-align: center;   
 }
