@@ -1,5 +1,7 @@
 ﻿$("document").ready(function () {
 
+    $(document).on('','')
+
     var lastScrollTop = 0;
     $(window).scroll(function (event) {
         var st = $(this).scrollTop();
@@ -14,7 +16,7 @@
         zenscroll.toY(30);
     });
 
-    $("#dTireRep").click(function () {
+    $("#svgTireChange").click(function () {
         ShowServAbout("dTireRep",1)
     });
 
@@ -22,5 +24,4 @@
 
 function ShowServAbout(caller,num) {
     $("#dServAbou1").toggle(300);
-    zenscroll.
 }

@@ -54,12 +54,13 @@
     text-align: center;
 }
 
-span {
+img[id*='svg'] {
     transition: transform 1s linear;
     -webkit-transition: transform 1s linear;
+    height : 150px;
 }
 
-.iconDiv span:first-child:hover {
+.iconDiv img:first-child:hover {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
 }
