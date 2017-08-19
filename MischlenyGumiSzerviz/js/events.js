@@ -1,6 +1,5 @@
 ﻿$("document").ready(function () {
 
-    $(document).on('','')
 
     var lastScrollTop = 0;
     $(window).scroll(function (event) {
@@ -16,12 +15,21 @@
         zenscroll.toY(30);
     });
 
-    $("#svgTireChange").click(function () {
-        ShowServAbout("dTireRep",1)
+    $("#dTireRep, #dPunctureRep, #dBalancing").click(function () {
+        setTimeout(function () { ShowServAbout("dTireRep",1)
     });
 
 });
 
-function ShowServAbout(caller,num) {
-    $("#dServAbou1").toggle(300);
+function ShowServAbout(caller, num) {
+    var aboutSelector = "#dServAbou" + num;
+    $(aboutSelector).toggle(300);
+
+
+        if ($(aboutSelector).css('display') == 'none') {
+            $('html, body').animate({
+                scrollTop: $(aboutSelector).offset().top
+            }, 1000)
+        }
+    }, 500);
 }
