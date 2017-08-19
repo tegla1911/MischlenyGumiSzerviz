@@ -5,19 +5,21 @@
     <meta charset="utf-8">
     <meta name="Mischleny Gumiszervíz" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="" />
-
+    
     <!--Links-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-selfExtender.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/zenscroll-min.js"></script>
 
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <!--Navbar-->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="topNavbar" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
@@ -25,13 +27,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Mischleny Gumiszervíz</a>
+                <a class="navbar-brand" id="linkToTop" href="#carousel" >Mischleny Gumiszervíz</a>
             </div>
             <div class="collapse navbar-collapse" id="topNavBar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#services">Szolgáltatások</a></li>
-                    <li><a href="#wheelRep">Gumiabroncs szerelés</a></li>
-                    <li><a href="#wShieldRep">Szélvédőjavítás</a></li>
                     <li><a href="#contact">Kapcsolat</a></li>
                 </ul>
             </div>
@@ -39,7 +39,7 @@
     </nav>
 
     <!--Carousel-->
-    <div class="jumbotron text-center">
+    <div id="carousel" class="jumbotron text-center">
         <h1>Mischleny Gumiszervíz</h1>
         <img src="Images/Logo_main_small_bg.png" class="img-rounded" alt="Main Logo">
         <p>A kozármiselnyi Gumiszervíz</p>
@@ -51,42 +51,40 @@
         <h4>Amit nyújtani tudunk:</h4>
         <br>
         <div class="row">
-            <div class="col-md-4">
+            <div id="dTireRep" class="col-md-4 iconDiv">
                 <span class="glyphicon glyphicon-off"></span>
                 <h4>Abroncs szerelés</h4>
             </div>
-            <div class="col-md-4">
+            <div id="dPunctureRep" class="col-md-4 iconDiv">
                 <span class="glyphicon glyphicon-heart"></span>
                 <h4>Defekt javítás</h4>
             </div>
-            <div class="col-md-4">
+            <div id="dBalancing" class="col-md-4 iconDiv">
                 <span class="glyphicon glyphicon-lock"></span>
                 <h4>Centírozás</h4>
             </div>
         </div>
+        <div id="dServAbou1" class="col-md-12 servAbout1">
+
+        </div>
         <br><br>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 iconDiv">
                 <span class="glyphicon glyphicon-leaf"></span>
                 <h4>Könnyűfém felnik</h4>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 iconDiv">
                 <span class="glyphicon glyphicon-certificate"></span>
                 <h4>Acéltárcsák</h4>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 iconDiv">
                 <span class="glyphicon glyphicon-wrench"></span>
                 <h4>Keréktárolás</h4>
             </div>
         </div>
-    </div>
+        <div id="dServAbout2" class="col-md-12 servAbout2">
 
-    <!--Gumiabroncs szerelés-->
-    <div id="wheelRep" class="container-fluid text-center">
-    </div>
-
-    <!-- Szélvédő javítás -->
-    <div id="wShieldRep" class="container-fluid text-center">
+        </div>
     </div>
 
     <!--Kapcsolat-->

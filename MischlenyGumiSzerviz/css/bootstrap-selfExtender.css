@@ -35,9 +35,9 @@
     color: #fff !important;
 }
 
-.footStyle{
-    background-color:#800000;
-    color:darkslategrey; 
+.footStyle {
+    background-color: #800000;
+    color: darkslategrey;
 }
 
 .glyphicon-small {
@@ -51,5 +51,19 @@
 }
 
 .table td {
-   text-align: center;   
+    text-align: center;
+}
+
+span {
+    transition: transform 1s linear;
+    -webkit-transition: transform 1s linear;
+}
+
+.iconDiv span:first-child:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+#dServAbou1 {
+    display: none;
+    height:200px;
 }
