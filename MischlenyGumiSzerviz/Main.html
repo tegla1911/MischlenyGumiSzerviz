@@ -5,15 +5,36 @@
     <meta charset="utf-8">
     <meta name="Mischleny Gumiszervíz" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="" />
-    
+
     <!--Links-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-selfExtender.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/events.js"></script>
     <script src="js/zenscroll-min.js"></script>
 
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '605114739877430',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v2.10'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -27,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id="linkToTop" href="#carousel" >Mischleny Gumiszervíz</a>
+                <a class="navbar-brand" id="linkToTop" href="#carousel">Mischleny Gumiszervíz</a>
             </div>
             <div class="collapse navbar-collapse" id="topNavBar">
                 <ul class="nav navbar-nav navbar-right">
@@ -53,17 +74,17 @@
         <div id="firstServiceRow" class="row">
             <div id="dTireRep" class="col-md-4 iconDiv">
                 <img id="svgTireChange" src="/Images/svg/car-tire-change.svg"
-                        type="image/svg+xml" />
+                     type="image/svg+xml" />
                 <h4>Abroncs szerelés</h4>
             </div>
             <div id="dPunctureRep" class="col-md-4 iconDiv">
                 <img id="svgPuncture" src="/Images/svg/puncture-in-a-wheel.svg"
-                        type="image/svg+xml" />
+                     type="image/svg+xml" />
                 <h4>Defekt javítás</h4>
             </div>
             <div id="dBalancing" class="col-md-4 iconDiv">
                 <img id="svgBalancing" src="/Images/svg/tiremarks.svg"
-                        type="image/svg+xml" />
+                     type="image/svg+xml" />
                 <h4>Centírozás</h4>
             </div>
         </div>
@@ -89,7 +110,7 @@
             </div>
         </div>
         <div id="dServAbou2" class="col-md-12 servAbout2">
-
+            LOREUM IPSIUM
         </div>
     </div>
 
@@ -103,7 +124,7 @@
             <div class="col-md-6 col-sm-12">
 
                 <div id="rowTerkepCaption">
-                    <h3><u>Térkép</u></h3>
+                    <h3><i class="fa fa-map-marker" aria-hidden="true" style="color:green"></i> <u>Térkép</u></h3>
                 </div>
 
                 <div id="rowGoogleMaps" class="row">
@@ -113,18 +134,16 @@
             </div>
 
             <div class="col-md-6 col-sm-12">
-
                 <div id="row1" class="row">
                     <div id="row11" class="row">
-                        <h3><u>  <span class="glyphicon glyphicon-small glyphicon-book-open"></span> Nyitvatartás</u></h3>
-
+                        <h3><i class="fa fa-list-alt"></i> <u>Nyitvatartás</u></h3>
                     </div>
 
                     <div id="row12" class="row">
                         <div class="container-fluid">
                             <table class="table table-striped">
                                 <thead>
-                                    <tr >
+                                    <tr>
                                         <th class="text-center">Nap</th>
                                         <th class="text-center">Időszak</th>
                                     </tr>
@@ -183,25 +202,49 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div id="row2" class="row">
-                    <div id="row21" class="row">
-                        <h3><u>Telefonszám</u></h3>
+        <div style="clear:both;"></div>
+
+        <div id="row2" class="row">
+            <div class="col-md-6 col-sm-12">
+                <div id="row21" class="row">
+                    <h3><i class="fa fa-phone" aria-hidden="true" style="color:red"></i> <u>Telefonszám</u></h3>
+                </div>
+
+                <div id="row22" class="row">
+                    <div class="ulList">
+                        <ul class="list-group">
+                            <li class="list-group-item"><span class="phoneNumberTextStyle"><em>+36 20-488-1000 </em></span></li>
+                            <li class="list-group-item"><span class="phoneNumberTextStyle"><em>+36 72/885-270</em></span></li>
+                        </ul>
                     </div>
-
-                    <div id="row22" class="row">
-
-                    </div>
+                    <span> Sürgős esetben Non-stop rendelkezésre állás!</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div id="row31" class="row">
+                    <h3><i class="fa fa-facebook-square" style="color:#3B5998" aria-hidden="true"></i> <u>Facebook</u></h3>
+                </div>
+                <div id="row32" class="row">
+                    <div id="fbPage" class="fb-page"
+                         data-href="https://www.facebook.com/mischlenygumiszerviz"
+                         data-width="380"
+                         data-hide-cover="false"
+                         data-show-facepile="false"></div>
                 </div>
             </div>
         </div>
+
+
     </div>
 
     <!-- Footer -->
     <div class="container-fluid text-center footStyle">
         <footer class="footer">
             <div class="container">
-                <p class="text-muted">Designed &amp; Made by: &ETH;&ETH;, All rights reserved &reg; 2017  </p>
+                <p>Designed &amp; Made by: &ETH;&ETH;, All rights reserved &reg; 2017  </p>
             </div>
         </footer>
     </div>

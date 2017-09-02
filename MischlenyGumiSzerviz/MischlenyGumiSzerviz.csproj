@@ -67,11 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap-selfExtender.css" />
-    <Content Include="css\font-awesome.css" />
     <Content Include="css\font-awesome.min.css" />
-    <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
-    <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Images\Logo_main.jpg" />
@@ -93,9 +90,7 @@
     <Content Include="js\zenscroll-min.js" />
     <Content Include="Main.html" />
     <Content Include="packages.config" />
-    <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap-theme.min.css.map" />
-    <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\fontawesome-webfont.woff2" />

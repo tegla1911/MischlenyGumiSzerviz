@@ -16,20 +16,22 @@
     });
 
     $("#dTireRep, #dPunctureRep, #dBalancing").click(function () {
-        setTimeout(function () { ShowServAbout("dTireRep",1)
+        ShowServAbout(1)
+    });
+    $("#dAlloyWheels, #dWheels, #dWheelStore").click(function () {
+        ShowServAbout(2)
     });
 
 });
 
-function ShowServAbout(caller, num) {
+function ShowServAbout(num) {
     var aboutSelector = "#dServAbou" + num;
     $(aboutSelector).toggle(300);
 
 
-        if ($(aboutSelector).css('display') == 'none') {
-            $('html, body').animate({
-                scrollTop: $(aboutSelector).offset().top
-            }, 1000)
-        }
-    }, 500);
+    if ($(aboutSelector).css('display') == 'none') {
+        scrollTop: $(aboutSelector).offset().top
+    }
+
+
 }
