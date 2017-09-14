@@ -3,18 +3,26 @@
 <head>
     <title>Mischleny Gumiszervíz</title>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
     <meta name="Mischleny Gumiszervíz" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="" />
 
     <!--Links-->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-selfExtender.css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/events.js"></script>
     <script src="js/zenscroll-min.js"></script>
+    <script src="js/slick.min.js"></script>
 
     <script>
         window.fbAsyncInit = function () {
@@ -48,8 +56,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="Images/svg/svgLogoWithoutTeszt.svg" id="imgNavLogo" />
-                <a class="navbar-brand" id="linkToTop" href="#carousel">Mischleny Gumiszervíz</a>
+                <img src="Images/svg/svgLogoWithoutTeszt.svg" data-toggle="collapse" id="imgNavLogo" />
+                <a class="navbar-brand" id="linkToTop" href="#carousel">Mischleny Gumiszerviz</a>
             </div>
             <div class="collapse navbar-collapse" id="topNavBar">
                 <ul class="nav navbar-nav navbar-center">
@@ -63,7 +71,9 @@
     <!--Carousel-->
     <div id="carousel" class="jumbotron text-center">
         <h1>Mischleny Gumiszervíz</h1>
-        <img src="Images/Logo_main_small_bg.png" class="img-rounded" alt="Main Logo">
+        <div id="carousel-images">
+            <img src="Images/Logo_main_small_bg.png" class="img-rounded" alt="Main Logo">
+        </div>
         <p>A kozármiselnyi Gumiszervíz</p>
     </div>
 

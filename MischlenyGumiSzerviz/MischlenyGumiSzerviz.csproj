@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,7 +71,12 @@
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\slick-theme.css" />
+    <Content Include="css\slick.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Images\audi-wheel.jpg" />
+    <Content Include="Images\audi-wheel_min_768.jpg" />
+    <Content Include="Images\black-diamond-plate_min_width100.jpg" />
     <Content Include="Images\Logo_main.jpg" />
     <Content Include="Images\Logo_main_bg.png" />
     <Content Include="Images\Logo_main_bg_smaller.png" />
@@ -87,7 +93,9 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\events.js" />
+    <Content Include="js\jquery-3.2.1.slim.min.js" />
     <Content Include="js\npm.js" />
+    <Content Include="js\slick.min.js" />
     <Content Include="js\zenscroll-min.js" />
     <Content Include="Main.html" />
     <Content Include="packages.config" />
@@ -98,6 +106,8 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\Monthoers.otf" />
+    <Content Include="fonts\Monthoers.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

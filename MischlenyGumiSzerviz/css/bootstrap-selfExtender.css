@@ -1,8 +1,28 @@
-﻿.jumbotron {
+﻿@font-face {
+    font-family: 'Monthoers';
+    src: url('../fonts/Monthoers.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Monthoers-bold';
+    font-weight: bold;
+    src: url('../fonts/Monthoers.otf') format('opentype');
+}
+
+#linkToTop {
+    text-align: center;
+    vertical-align: central;
+    font-family: Monthoers;
+    font-size: 35px;
+}
+
+.jumbotron {
     background-color: #fff; /* Black */
     color: #AD0101;
     padding: 100px 25px;
     font-family: Impact, Charcoal, sans-serif;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .navbar {
@@ -11,91 +31,126 @@
     z-index: 9999;
     border: 0;
     font-size: 14px !important;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Tahoma, cursive, sans-serif;
     line-height: 1.42857143 !important;
-    border-radius: 0;
+    border-radius: 0px 0px 10px 10px;
 }
 
-@media (min-width: 768px) {
+.navbar-header {
+    overflow: visible;
+}
+
+.container {
+    margin-left: 0px !important;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #F1F7ED !important;
+}
+
+.bg-grey {
+    background-color: #37393A !important; /*Onyx*/
+    background-image: url('../Images/audi-wheel.jpg');
+    background-repeat:no-repeat;
+    background-size:auto;
+    color:white;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #800000 !important;
+    background-color: #F1F7ED !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #F1F7ED !important;
+}
+
+
+.footStyle {
+    background-color: black;
+    color: red
+}
+
+.glyphicon-small {
+    color: #910101;
+    font-size: 40px !important;
+}
+
+.glyphicon {
+    color: #910101;
+    font-size: 200px;
+}
+
+.table td {
+    text-align: center;
+}
+
+img[id*='svg'] {
+    transition: transform 1s linear;
+    -webkit-transition: transform 1s linear;
+    height: 150px;
+}
+
+.iconDiv img:first-child:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.ulList {
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+#dServAbou1 {
+    display: none;
+    height: 200px;
+}
+
+#fbPage {
+    margin-bottom: 5px;
+}
+
+#imgNavLogo {
+    position: absolute;
+    z-index: 10;
+    right: 0px;
+    height: 60px;
+}
+
+#contact {
+    /*background-color: #EDF5F9;*/
+}
+/*Text Styles*/
+.phoneNumberTextStyle {
+    font-size: larger;
+    font-family: monospace;
+}
+
+@media (min-width: 1001px) {
     .navbar-nav.navbar-center {
         position: absolute;
         left: 50%;
         transform: translatex(-50%);
     }
 
-    .navbar li a, .navbar .navbar-brand {
-        color: #F1F7ED !important;
-    }
-
-    .navbar-nav li a:hover, .navbar-nav li.active a {
-        color: #800000 !important;
-        background-color: #F1F7ED !important;
-    }
-
-    .navbar-default .navbar-toggle {
-        border-color: transparent;
-        color: #F1F7ED !important;
-    }
-
     .bg-grey {
-        background-color: #37393A !important; /*Onyx*/
-        color: #F1F7ED !important;
-    }
-
-    .footStyle {
-        /*background-color: #EDF5F9;*/
-        color: #404E4D;
-    }
-
-    .glyphicon-small {
-        color: #910101;
-        font-size: 40px !important;
-    }
-
-    .glyphicon {
-        color: #910101;
-        font-size: 200px;
-    }
-
-    .table td {
-        text-align: center;
-    }
-
-    img[id*='svg'] {
-        transition: transform 1s linear;
-        -webkit-transition: transform 1s linear;
-        height: 150px;
-    }
-
-    .iconDiv img:first-child:hover {
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-    }
-
-    .ulList {
-        padding-right: 150px;
-        padding-left: 150px;
-    }
-
-    #dServAbou1 {
-        display: none;
-        height: 200px;
-    }
-
-    #fbPage {
-        margin-bottom: 5px;
-    }
-    #imgNavLogo {
-        position: absolute;
-        z-index: 10;
-        right: 0px;
-        height:60px;
+        background-image: url('../Images/audi-wheel_min_768.jpg');
+        background-size: cover;
     }
     #contact {
-        /*background-color: #EDF5F9;*/
+
     }
-    /*Text Styles*/
-    .phoneNumberTextStyle {
-        font-size: larger;
-        font-family: monospace;
+}
+
+@media(max-width:1000px){
+    .bg-grey {
+        background-image: url('../Images/audi-wheel.jpg');
+        
     }
+    #contact {
+
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+}
