@@ -1,6 +1,6 @@
 ﻿.jumbotron {
     background-color: #fff; /* Black */
-    color: #FF0000;
+    color: #AD0101;
     padding: 100px 25px;
     font-family: Impact, Charcoal, sans-serif;
 }
@@ -17,39 +17,71 @@
 }
 
     .navbar li a, .navbar .navbar-brand {
-        color: #fff !important;
+        color: #F1F7ED !important;
     }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #800000 !important;
-    background-color: #fff !important;
+    background-color: #F1F7ED !important;
 }
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: #fff !important;
+    color: #F1F7ED !important;
 }
 
 .bg-grey {
-    background-color: #2E2E2E !important;
-    color: #fff !important;
+    background-color: #37393A !important; /*Onyx*/
+    color: #F1F7ED !important;
 }
 
-.footStyle{
-    background-color:#800000;
-    color:darkslategrey; 
+.footStyle {
+    /*background-color: #EDF5F9;*/
+    color: #404E4D;
 }
 
 .glyphicon-small {
-    color: #800000;
+    color: #910101;
     font-size: 40px !important;
 }
 
 .glyphicon {
-    color: #800000;
+    color: #910101;
     font-size: 200px;
 }
 
 .table td {
-   text-align: center;   
+    text-align: center;
+}
+
+img[id*='svg'] {
+    transition: transform 1s linear;
+    -webkit-transition: transform 1s linear;
+    height: 150px;
+}
+
+.iconDiv img:first-child:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+.ulList {
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+#dServAbou1 {
+    display: none;
+    height: 200px;
+}
+
+#fbPage{
+    margin-bottom:5px;
+}
+#contact {
+    /*background-color: #EDF5F9;*/
+}
+/*Text Styles*/
+.phoneNumberTextStyle {
+    font-size: larger;
+    font-family: monospace;
 }
