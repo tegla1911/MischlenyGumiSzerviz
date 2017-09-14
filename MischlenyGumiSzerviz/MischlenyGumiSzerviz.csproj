@@ -80,6 +80,7 @@
     <Content Include="Images\svg\car-wheel.svg" />
     <Content Include="Images\svg\playground.svg" />
     <Content Include="Images\svg\puncture-in-a-wheel.svg" />
+    <Content Include="Images\svg\svgLogoWithoutTeszt.svg" />
     <Content Include="Images\svg\tire.svg" />
     <Content Include="Images\svg\tiremarks.svg" />
     <Content Include="Images\svg\vehicle-wheel.svg" />

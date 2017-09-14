@@ -16,72 +16,86 @@
     border-radius: 0;
 }
 
+@media (min-width: 768px) {
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
     .navbar li a, .navbar .navbar-brand {
         color: #F1F7ED !important;
     }
 
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #800000 !important;
-    background-color: #F1F7ED !important;
-}
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #800000 !important;
+        background-color: #F1F7ED !important;
+    }
 
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #F1F7ED !important;
-}
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #F1F7ED !important;
+    }
 
-.bg-grey {
-    background-color: #37393A !important; /*Onyx*/
-    color: #F1F7ED !important;
-}
+    .bg-grey {
+        background-color: #37393A !important; /*Onyx*/
+        color: #F1F7ED !important;
+    }
 
-.footStyle {
-    /*background-color: #EDF5F9;*/
-    color: #404E4D;
-}
+    .footStyle {
+        /*background-color: #EDF5F9;*/
+        color: #404E4D;
+    }
 
-.glyphicon-small {
-    color: #910101;
-    font-size: 40px !important;
-}
+    .glyphicon-small {
+        color: #910101;
+        font-size: 40px !important;
+    }
 
-.glyphicon {
-    color: #910101;
-    font-size: 200px;
-}
+    .glyphicon {
+        color: #910101;
+        font-size: 200px;
+    }
 
-.table td {
-    text-align: center;
-}
+    .table td {
+        text-align: center;
+    }
 
-img[id*='svg'] {
-    transition: transform 1s linear;
-    -webkit-transition: transform 1s linear;
-    height: 150px;
-}
+    img[id*='svg'] {
+        transition: transform 1s linear;
+        -webkit-transition: transform 1s linear;
+        height: 150px;
+    }
 
-.iconDiv img:first-child:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-}
-.ulList {
-    padding-right: 150px;
-    padding-left: 150px;
-}
+    .iconDiv img:first-child:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }
 
-#dServAbou1 {
-    display: none;
-    height: 200px;
-}
+    .ulList {
+        padding-right: 150px;
+        padding-left: 150px;
+    }
 
-#fbPage{
-    margin-bottom:5px;
-}
-#contact {
-    /*background-color: #EDF5F9;*/
-}
-/*Text Styles*/
-.phoneNumberTextStyle {
-    font-size: larger;
-    font-family: monospace;
-}
+    #dServAbou1 {
+        display: none;
+        height: 200px;
+    }
+
+    #fbPage {
+        margin-bottom: 5px;
+    }
+    #imgNavLogo {
+        position: absolute;
+        z-index: 10;
+        right: 0px;
+        height:60px;
+    }
+    #contact {
+        /*background-color: #EDF5F9;*/
+    }
+    /*Text Styles*/
+    .phoneNumberTextStyle {
+        font-size: larger;
+        font-family: monospace;
+    }
