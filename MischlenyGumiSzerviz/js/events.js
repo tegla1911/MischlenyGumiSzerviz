@@ -1,24 +1,21 @@
 ﻿$("document").ready(function () {
 
+
     //ZenScroll
     $("#linkToTop").click(function () {
         zenscroll.toY(30);
     });
     //Expanding divs
     $("#dTireRep, #dPunctureRep, #dBalancing").click(function () {
-        ShowServAbout(1)
+       // ShowServAbout(1);
     });
     $("#dAlloyWheels, #dWheels, #dWheelStore").click(function () {
-        ShowServAbout(2)
+        //ShowServAbout(2);
     });
 
-    //carousel slick
-
-    //$('#carousel-images').slick({
-    //    arrows: true,
-    //    autoplay: true,
-    //    autoplaySpeed: 1000,
-    //});
+    $('.carousel').carousel({
+        interval: 3000
+      })
 });
 
 

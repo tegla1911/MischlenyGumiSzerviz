@@ -46,11 +46,12 @@
 
 .navbar li a, .navbar .navbar-brand {
     color: #F1F7ED !important;
+    background: red;
 }
 
 .bg-grey {
     background-color: #37393A !important; /*Onyx*/
-    background-image: url('../Images/audi-wheel.jpg');
+    background-image: url('../Images/audi-wheel_min_768.jpg');
     background-repeat:no-repeat;
     background-size:auto;
     color:white;
@@ -64,12 +65,19 @@
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #F1F7ED !important;
-}
+    /* margin-left:50%;*/
+} 
 
+.thumbnail{
+    background-color: transparent;
+    border: none;
+    color:whitesmoke;
+}
 
 .footStyle {
     background-color: black;
-    color: red
+    color: red;
+    text-align:center;
 }
 
 .glyphicon-small {
@@ -98,8 +106,9 @@ img[id*='svg'] {
 }
 
 .ulList {
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 100px;
+    padding-left: 100px;
+    color:black;
 }
 
 #dServAbou1 {
@@ -119,7 +128,8 @@ img[id*='svg'] {
 }
 
 #contact {
-    /*background-color: #EDF5F9;*/
+    background-color: #131313;
+    color: white;
 }
 /*Text Styles*/
 .phoneNumberTextStyle {
@@ -133,17 +143,37 @@ img[id*='svg'] {
         left: 50%;
         transform: translatex(-50%);
     }
-
-    .bg-grey {
-        background-image: url('../Images/audi-wheel_min_768.jpg');
-        background-size: cover;
-    }
     #contact {
 
     }
 }
+.TableDesign{
+    display: flex;
+    justify-content: center;
+}
+.table{
+    width: 80%;
+}
 
-@media(max-width:1000px){
+#myCarousel{
+    margin-top: 55px;
+}
+.NonStopAlert{
+    margin-left: 100px;
+    margin-right: 100px;
+    color: red;
+    background-color: black;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50;
+    bottom: 0;
+    left: 0;
+    width: 8%;  /* change this value to required width */
+}
+
+/* @media(max-width:1000px){
     .bg-grey {
         background-image: url('../Images/audi-wheel.jpg');
         
@@ -153,4 +183,10 @@ img[id*='svg'] {
         background-repeat:no-repeat;
         background-size:cover;
     }
-}
+} */
+
+    @media(max-width:768px){
+        #imgNavLogo{
+            display: none
+        }
+    }
