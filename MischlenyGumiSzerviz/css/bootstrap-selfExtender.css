@@ -1,4 +1,6 @@
-﻿@font-face {
+﻿
+/**Monthoers Fontface*/
+@font-face {
     font-family: 'Monthoers';
     src: url('../fonts/Monthoers.otf') format('opentype');
 }
@@ -9,10 +11,54 @@
     src: url('../fonts/Monthoers.otf') format('opentype');
 }
 
+/*Amaranth Fontface*/
+@font-face{
+    font-family: 'Amaranth';
+    src: url('../fonts/Amaranth/Amaranth-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Amaranth-boldItalic';
+    src: url('../fonts/Amaranth/Amaranth-BoldItalic.ttf') format('truetype');
+}
+
+/*ROSARIO Fontface*/
+@font-face{
+    font-family: 'Rosario';
+    src: url('../fonts/Rosario/Rosario-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Rosario-boldItalic';
+    src: url('../fonts/Rosario/Rosario-BoldItalic.ttf') format('truetype');
+}
+
+/*KALAM Fontface*/
+@font-face{
+    font-family: 'Kalam';
+    src: url('../fonts/Kalam/Kalam-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Kalam-boldItalic';
+    src: url('../fonts/Kalam/Kalam-BoldItalic.ttf') format('truetype');
+}
+
+/*Permanent_Marker FontFace*/
+@font-face{
+    font-family: 'Permanent_Marker';
+    src: url('../fonts/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+/*Shadows_Into_Light_Two FontFace*/
+@font-face{
+    font-family: 'Shadows_Into_Light_Two';
+    src: url('../fonts/Shadows_Into_Light_Two/ShadowsIntoLightTwo-Regular.ttf') format('truetype');
+}
 #linkToTop {
     text-align: center;
     vertical-align: central;
-    font-family: Monthoers;
+    font-family: Kalam;
     font-size: 35px;
 }
 
@@ -26,14 +72,19 @@
 }
 
 .navbar {
-    margin-bottom: 0;
-    background-color: #000000;
-    z-index: 9999;
+    margin-bottom: 50px;
+    background-color: #232323;
+    background-image: url('../Images/Tire-Tracks.png');
+    width: 100%;
+    z-index: 20;
     border: 0;
-    font-size: 14px !important;
-    font-family: Tahoma, cursive, sans-serif;
+    font-family: Shadows_Into_Light_Two !important;
     line-height: 1.42857143 !important;
     border-radius: 0px 0px 10px 10px;
+}
+body{
+    padding-top:50px;
+    font-family: 'Shadows_Into_Light_Two';
 }
 
 .navbar-header {
@@ -43,39 +94,102 @@
 .container {
     margin-left: 0px !important;
 }
-
-.navbar li a, .navbar .navbar-brand {
-    color: #F1F7ED !important;
-    background: red;
+.container-fluid{
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.bg-grey {
+.navbar li a{
+    color: white !important;
+    font-size: 25px;
+    font-family: 'Shadows_Into_Light_Two';
+    /* background: black; */
+}
+.navbar-brand{
+    color: red !important;
+    font-weight: 18px;
+}
+
+#services {
     background-color: #37393A !important; /*Onyx*/
-    background-image: url('../Images/audi-wheel_min_768.jpg');
+    background-image: url('../Images/tire_01.jpg');
     background-repeat:no-repeat;
-    background-size:auto;
+    background-size:cover;
     color:white;
 }
 
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background:#ff304d;
+    height: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #800000 !important;
-    background-color: #F1F7ED !important;
+    background-color: #232323 !important;
 }
 
-.navbar-default .navbar-toggle {
+/* .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #F1F7ED !important;
-    /* margin-left:50%;*/
-} 
+     margin-left:50%;
+}  */
+
+.parallax { 
+    /* The image used defined in the related rules...*/
+
+    /* Set a specific height in the related rules...*/
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
 
 .thumbnail{
     background-color: transparent;
-    border: none;
-    color:whitesmoke;
+    border: 1px solid white;
+}
+.thumbnail .caption{
+    color:white;
+    font-family: Kalam-boldItalic;
 }
 
 .footStyle {
-    background-color: black;
+    background-color:black;
     color: red;
     text-align:center;
 }
@@ -128,8 +242,9 @@ img[id*='svg'] {
 }
 
 #contact {
-    background-color: #131313;
+    background-color: #232323;
     color: white;
+    /* height: 500px; */
 }
 /*Text Styles*/
 .phoneNumberTextStyle {
@@ -143,9 +258,6 @@ img[id*='svg'] {
         left: 50%;
         transform: translatex(-50%);
     }
-    #contact {
-
-    }
 }
 .TableDesign{
     display: flex;
@@ -158,11 +270,32 @@ img[id*='svg'] {
 #myCarousel{
     margin-top: 55px;
 }
+.carousel-control{
+    position: absolute;
+    top:30%;
+    z-index: 0;
+    display: inline-block;
+}
+.carousel-control.left{
+    background-image: none;
+}
+.carousel-control.right{
+    background-image: none;
+}
+
+.carousel-control > span > i {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    color: #000;
+    border-radius: 100%;
+}
+
 .NonStopAlert{
     margin-left: 100px;
     margin-right: 100px;
     color: red;
-    background-color: black;
+    background-color: whitesmoke ;
 }
 
 .carousel-control {
